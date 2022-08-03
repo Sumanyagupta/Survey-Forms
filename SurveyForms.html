@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    
+    <link rel="stylesheet" type="text/css" href="SurveyForms.css">
+</head>
+<div class="heading">
+    <h1 id="head"> Scholarship Survey Form </h1>
+    <h4 id="subhead">Please be advised that your responses are an important part of the scholarship determination
+        process. If you have any questions, email sumanyagupta130@pec.edu.in
+    </h4>
+</div>
+<hr><br>
+
+<body background="Images/surveyforms.jpg">
+
+    <form action="backend.php">
+        <div class="bo">
+            <div class="container">
+                <h2>PERSONAL DATA</h2>
+            </div>
+
+            <label for="name">Name</label>
+            <div class="details">
+                <input type="text" name="myname" placeholder="Enter your name" id="name">
+            </div><br>
+            <label for="email">Email</label>
+            <div class="details">
+                <input type="text" name="myemail" placeholder="Enter your email" id="email">
+            </div><br>
+            <label for="age">Age </label>
+            <div class="details">
+                <input type="date" name="myage" placeholder="Enter your age" id="age">
+            </div><br>
+
+            <label for="gender">Gender</label>
+            <div class="details">
+                Male <input type="radio" name="mygender" id="gender">Female <input type="radio" name="mygender"
+                    id="gender">Other <input type="radio" name="mygender" id="gender">
+            </div><br>
+            <label for="Place">Place of Origin</label>
+            <div class="details">
+                <input type="text" name="myplace" placeholder="Enter your place" id="Place">
+            </div><br>
+            <label for="contact">Contact Number </label>
+            <div class="details">
+                <input type="number" name="myacontact" placeholder="Enter your contact number" id="contact">
+            </div><br>
+            <label for="disability">Physical Disability </label>
+            <div>
+                <select name="" id="disability">
+                    <option value="Yes">Yes</option>
+                    <option value="No" selected>No</option>
+                </select>
+                <!-- Yes<input type="checkbox" name=""  id="disability"> No <input type="checkbox" name=""  id="disability"> -->
+            </div><br>
+
+            <label for="mothername">Mother's Name</label>
+            <div class="details">
+                <input type="text" name="mothername" placeholder="Enter your mother's name" id="mothername">
+            </div><br>
+            <label for="fathername">Father's Name</label>
+            <div class="details"  >
+                <input type="text" name="fathername" placeholder="Enter your father's name" id="fathername">
+
+            </div> <br>
+            <label for="address">Address </label>
+            <div class="details">
+                <input type="textarea" name="myaddress" placeholder="Enter your address" id="address">
+            </div><br>
+            <hr><br>
+
+            <div class="acadinfo"
+            >
+            <div class="container">
+                <h2>ACADEMIC INFORMATION </h2>
+            </div>
+
+            <label for="candidateid"> Candidate ID </label>
+            <div class="details">
+                <input type="number" name="myid" placeholder="Your candidate id" id="candidateid">
+            </div><br>
+            <label for="Candidaterank"> Candidate Rank </label>
+            <div class="details">
+                <input type="number" name="myrank" placeholder="Your candidate rank" id="Candidaterank">
+            </div><br>
+
+            <label for="institute"> Name of your institute </label>
+            <div class="details">
+                <input type="text" name="myinstitution" placeholder="Your institute" id="institute">
+            </div><br>
+            <label for="course"> Course Name </label>
+            <div class="details">
+                <select name="Your Course" id="course">
+
+                    <option value="ECE">Electronics and Communication Engineering</option>
+                    <option value="CSE">Computer Science Engineering</option>
+                    <option value="CE">Computer Engineering </option>
+                    <option value="EE" selected>Electrical Engineering</option>
+                    <option value="AE">Aerospace Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="Civil">Civil Engineering</option>
+                </select>
+                <!-- <input type="text" name="mycourse" placeholder="Your institute" id="institute"> -->
+            </div><br>
+            <label for="eligible">Are you eligible for this scholarship ? </label>
+            <div class="details">
+
+                <input type="checkbox" name="myelegibility" id="eligible">
+            </div><br>
+            <label for="cgpa">Your CGPA </label>
+            <div class="details">
+                <input type="number" name="mycgpa" placeholder="Your CGPA" id="cgpa">
+            </div><br>
+            <label for="write">Why do you need this Scholarship ?</label>
+            <div class="details">
+                <input type="text" name=" mytext" placeholder="Write in not more than 80 Words" id="write"><br>
+                <!-- within 100 words: <textarea name="mytext" id="write" cols="3" rows="2"></textarea> -->
+            </div><br>
+        </div>
+    </div>
+        <div>
+            <input type="submit" value="Submit Now" class="myButton"><br>
+        </div><br>
+        <div>
+            <input type="reset" value="Reset Now" class="myButton"><br>
+        </div><br>
+
+
+    </form>
+
+</body>
+
+</html>
